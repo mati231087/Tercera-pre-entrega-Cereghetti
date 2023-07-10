@@ -1,10 +1,10 @@
 # Tercera-pre-entrega-Cereghetti
 
-# PROYECTO: Entrenautas
-     Businessplan en desarrollo
+# PROYECTO: Entrenautas ⚓️
+     Businessplan en desarrollo 👨🏻‍💻
      Crearemos el primer mercado nautico digital para la compra-venta de embarcaciones de todo tipo, accesorios, repuestos y servicios. El objetivo es que los usuarios del sitio puedan publicar su producto a comercializar o un servicio ofrecido para que otros usuarios puedan interactuar. 
 
-# Comenzando el proyecto
+# Comenzando el proyecto 🚀
      Es importante tener la version actualizada de Visual Studio Code, en el mismo tener instalado Github y Django.
 
      Link para crear cuenta en github: https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account
@@ -33,7 +33,7 @@
         A continuación, crea y activa un entorno virtual para tu proyecto Django. Puedes usar venv para crear el entorno virtual. Ejecuta los siguientes comandos:
 
             python -m venv venv
-            
+
             Para activar el entorno virtual en Windows:
             venv\Scripts\activate
 
