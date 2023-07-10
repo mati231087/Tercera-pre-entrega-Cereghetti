@@ -43,7 +43,8 @@
             Luego, instala las dependencias de Django ejecutando el siguiente comando:
             pip install -r requirements.txt
 
-    Ahora tienes ambos proyectos clonados y el entorno virtual de Django configurado. Puedes trabajar en ambos proyectos en Visual Studio Code y utilizar la terminal integrada para ejecutar comandos relacionados con Git y Django.
+    Ahora tienes el proyecto clonado y el entorno virtual de Django configurado. Puedes trabajar en Visual Studio Code y utilizar la terminal integrada para ejecutar comandos relacionados con Git y Django.
+
 
 
     
