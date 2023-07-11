@@ -14,8 +14,8 @@ class Categoria(models.Model):
     OPCIONES_CATEGORIA = [
         ('motor', 'Embarcación a motor'),
         ('vela', 'Embarcación a vela'),
-        ('moto_agua', 'Moto de agua'),
-        ('jet_ski', 'Jet Ski'),
+        ('Auxiliar', 'Auxiliar'),
+        ('jet_ski_o_moto_de_agua', 'Jet Ski_o_moto_de_agua'),
         ('remo', 'Embarcación a remo')
     ]
 
