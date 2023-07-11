@@ -16,8 +16,8 @@ class Categoria(models.Model):
         ('Vela', 'Vela'),
         ('Auxiliar', 'Auxiliar'),
         ('Moto de agua', 'Moto de agua'),
-        ('Remo', 'Remo')
-        ("otro", "otro")
+        ('Remo', 'Remo'),
+        ("otro", "otro"),
         ("servicio", "servicio")
     ]
 
