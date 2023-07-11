@@ -10,7 +10,7 @@
 
     <Form method="post">
         {% csrf_token %}
-        {{ form3 }}
+        {{ form3.as_p }}
         <button type="submit">Guardar</button>
 
     </Form>
