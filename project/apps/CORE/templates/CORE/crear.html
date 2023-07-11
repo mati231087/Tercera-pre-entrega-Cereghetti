@@ -1,0 +1,32 @@
+{% extends "CORE/base.html" %}
+
+{% block TITULO %}
+
+    Cargar producto 
+
+{% endblock TITULO %}
+
+{% block CONTENIDO %}
+
+    <Form method="post">
+        {% csrf_token %}
+        {{ CategoriaForm }}
+        <button type="submit">Guardar</button>
+
+    </Form>
+
+    <Form method="post">
+        {% csrf_token %}}
+        {{ UsuarioForm }}
+        <button type="submit">Guardar</button>
+
+    </Form>
+    
+    <Form method="post">
+        {% csrf_token %}
+        {{ ProductoForm }}
+        <button type="submit">Guardar</button>
+    </Form>
+    
+    <a href="{% url "CORE:CORE" %}" > Ir al menú principal </a>
+{% endblock CONTENIDO %}
