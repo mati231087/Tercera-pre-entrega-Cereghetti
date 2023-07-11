@@ -5,7 +5,7 @@ from .models import Categoria, Producto, Usuario
 class CategoriaForm(forms.ModelForm):
     class Meta:
         model = Categoria
-        fields = ["motor", "vela", "auxiliar", "jet_ski_o_moto_de_agua", "remo"]
+        fields = ["nombre"]
 
 class ProductoForm(forms.ModelForm):
     class Meta:
@@ -16,5 +16,4 @@ class ProductoForm(forms.ModelForm):
 class UsuarioForm(forms.ModelForm):
     class Meta:
         model = Usuario
-        fields = [ 'nombre_completo', 'mail', 'telefono', 'direccion' ]
-    
+        fields = ['nombre_completo', 'mail', 'telefono']

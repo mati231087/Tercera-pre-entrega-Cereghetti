@@ -12,15 +12,14 @@ class Usuario(models.Model):
 
 class Categoria(models.Model):
     OPCIONES_CATEGORIA = [
-        ('motor', 'Embarcación a motor'),
-        ('vela', 'Embarcación a vela'),
+        ('Yate motor', 'Yate motor'),
+        ('Vela', 'Vela'),
         ('Auxiliar', 'Auxiliar'),
-        ('jet_ski_o_moto_de_agua', 'Jet Ski_o_moto_de_agua'),
-        ('remo', 'Embarcación a remo')
+        ('Moto de agua', 'Moto de agua'),
+        ('Remo', 'Remo')
     ]
 
     nombre = models.CharField(max_length=50, choices=OPCIONES_CATEGORIA)
-
     def __str__(self):
         return self.nombre
 
