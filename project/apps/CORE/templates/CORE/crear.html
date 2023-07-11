@@ -10,23 +10,23 @@
 
     <Form method="post">
         {% csrf_token %}
-        {{ CategoriaForm }}
+        {{ form3 }}
         <button type="submit">Guardar</button>
 
     </Form>
 
     <Form method="post">
         {% csrf_token %}}
-        {{ UsuarioForm }}
+        {{ form }}
         <button type="submit">Guardar</button>
 
     </Form>
     
     <Form method="post">
         {% csrf_token %}
-        {{ ProductoForm }}
+        {{ form }}
         <button type="submit">Guardar</button>
     </Form>
 
-    <a href="{% url "crear-categoria" %}" > Ir al menú principal </a>
+    <a href="{% url "crear_categoria" %}" > Ir al menú principal </a>
 {% endblock CONTENIDO %}
