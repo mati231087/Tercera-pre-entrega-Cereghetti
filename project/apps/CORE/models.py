@@ -34,7 +34,7 @@ class Producto(models.Model):
     manga = models.FloatField(default=0)
     puntal = models.FloatField(default=0)
     astillero = models.CharField(max_length=100, default="sin astillero")
-    anio_fabricacion = models.IntegerField(
+    año_fabricacion = models.IntegerField(
     default=0,
     validators=[
         MinValueValidator(1900, 'El año de fabricación debe ser igual o mayor a 1900.'),

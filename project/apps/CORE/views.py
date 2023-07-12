@@ -26,11 +26,11 @@ def crear_usuario(request: HttpRequest) -> HttpResponse:
         ...
     else: #request.method == "GET":
         form = UsuarioForm()
-    return render(request, "CORE/crear.html", {"form2": form})
+    return render(request, "CORE/crear.html", {"form": form})
 
 def crear_categoria(request: HttpRequest) -> HttpResponse:
     if request.method == "POST":
         ...
     else: #request.method == "GET":
         form = CategoriaForm()
-    return render(request, "CORE/crear.html", {"form3": form})
+    return render(request, "CORE/crear.html", {"form": form})

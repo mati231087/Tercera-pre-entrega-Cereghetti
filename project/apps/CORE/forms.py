@@ -21,4 +21,4 @@ class ProductoForm(forms.ModelForm):
 
     class Meta:
         model = Producto
-        fields = ["usuario", "categoria", "condicion", "eslora", "manga", "puntal", "astillero", "anio_fabricacion", "motorizacion", "capacidad", "ubicacion", "estado", "comentario"]
+        fields = ["usuario", "categoria", "condicion", "eslora", "manga", "puntal", "astillero", "año_fabricacion", "motorizacion", "capacidad", "ubicacion", "estado", "comentario"]
