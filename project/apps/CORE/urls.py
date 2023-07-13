@@ -10,4 +10,5 @@ urlpatterns = [
     path("cargar_producto/", crear_producto, name="cargar_producto"),
     path("crear-usuario/", crear_usuario, name="crear_usuario"),
     path("pagina-construccion/", pagina_construccion, name="pagina_construccion"),
+    path("base/", views.base_view, name="base"),  
 ]
