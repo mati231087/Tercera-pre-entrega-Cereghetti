@@ -15,8 +15,9 @@
     <p> {{ Saludo }} </p>
    {% endblock CONTENIDO %}
 
-   <a href="{% url 'crear_usuario' %}">Crear usuario</a>
-   <a href="{% url 'pagina_construccion' %}">Ver productos</a>
+<button type="button" onclick="window.location.href='{% url 'crear_usuario' %}'">Crear usuario</button>
+<button type="button" onclick="window.location.href='{% url 'pagina_construccion' %}'">Ver productos</button>
+
 
 </body>
 </html>
