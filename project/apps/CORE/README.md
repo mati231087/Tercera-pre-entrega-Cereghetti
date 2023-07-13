@@ -46,6 +46,14 @@
     Ahora tienes el proyecto clonado y el entorno virtual de Django configurado. Puedes trabajar en Visual Studio Code y utilizar la terminal integrada para ejecutar comandos relacionados con Git y Django.
 
 
+# objetivo del primer acercamiento 🎯
+
+Hemos creado mediante python/django un programa de inicio, donde el usuario va a poder registrarse y guardarse en la base de datos. Luego, mediante botones, va a poder cargar la informacion de producto y guardar.
+
+# puntos a mejorar
+
+Entre otras cosas, en primer instancia trabajare en el agregado de imagenes, centralizacion y diseño
+
 
     
 
