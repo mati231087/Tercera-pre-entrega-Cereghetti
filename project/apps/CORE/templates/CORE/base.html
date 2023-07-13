@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        button {
+            margin: 5px;
+            background-color: white;
+            color: navy;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
    {% block TITULO %}
@@ -15,11 +44,7 @@
     <p> {{ obtener_slogan }} </p>
    {% endblock CONTENIDO %}
 
-  
-
    <button type="button" onclick="window.location.href='{% url 'crear_usuario' %}'">Crear usuario</button>
    <button type="button" onclick="window.location.href='{% url 'pagina_construccion' %}'">Ver productos</button>
-
-
 </body>
 </html>

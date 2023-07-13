@@ -1,21 +1,72 @@
-<h1>Cargar producto</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+            color: white;
+        }
 
-<form method="POST">
-    {% csrf_token %}
-    <label for="id_nombre">Nombre de categoría:</label>
-    <select name="nombre" id="id_nombre">
-      {% for opcion in categoria_form.nombre.field.choices %}
-        <option value="{{ opcion.0 }}">{{ opcion.1 }}</option>
-      {% endfor %}
-    </select>
-    <button type="submit">Crear categoría</button>
-</form>
+        h1 {
+            margin-top: 0;
+            color: white;
+        }
 
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Crear producto</button>
-</form>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
 
-<button type="button" onclick="window.location.href = '{% url 'base' %}'" class="boton-crear-producto">Volver al inicio</button>
+        label, select {
+            margin: 5px;
+            color: white;
+        }
 
+        button {
+            margin: 5px;
+            background-color: white;
+            color: navy;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .boton-crear-producto {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cargar producto</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="id_nombre">Nombre de categoría:</label>
+        <select name="nombre" id="id_nombre">
+          {% for opcion in categoria_form.nombre.field.choices %}
+            <option value="{{ opcion.0 }}">{{ opcion.1 }}</option>
+          {% endfor %}
+        </select>
+        <button type="submit">Crear categoría</button>
+    </form>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear producto</button>
+    </form>
+
+    <button type="button" onclick="window.location.href='{% url 'base' %}'" class="boton-crear-producto">Volver al inicio</button>
+</body>
+</html>

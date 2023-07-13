@@ -1,16 +1,59 @@
-<form method="POST">
-    {% csrf_token %}
-    
-    <label for="id_nombre_completo">Nombre completo:</label>
-    <input type="text" name="nombre_completo" id="id_nombre_completo" required>
-    <label for="id_mail">Correo electrónico:</label>
-    <input type="email" name="mail" id="id_mail" required>
-    <label for="id_telefono">Teléfono:</label>
-    <input type="text" name="telefono" id="id_telefono" required>
-    <button type="submit">Crear usuario</button>
-  </form>
-  
-  <button type="button" onclick="window.location.href='{% url 'cargar_producto' %}'">Cargar producto</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+            color: white;
+        }
 
-  <button type="button" onclick="window.location.href = '{% url 'base' %}'" class="boton-crear-producto">Volver al inicio</button>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, input, button {
+            margin: 5px;
+        }
+
+        button {
+            background-color: white;
+            color: navy;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> EMPECEMOS: </h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label for="id_nombre_completo">Nombre completo:</label>
+        <input type="text" name="nombre_completo" id="id_nombre_completo" required>
+        <label for="id_mail">Correo electrónico:</label>
+        <input type="email" name="mail" id="id_mail" required>
+        <label for="id_telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="id_telefono" required>
+        <button type="submit">Crear usuario</button>
+    </form>
+
+    <button type="button" onclick="window.location.href='{% url 'cargar_producto' %}'">Cargar producto</button>
+
+    <button type="button" onclick="window.location.href='{% url 'base' %}'" class="boton-crear-producto">Volver al inicio</button>
+</body>
+</html>
 

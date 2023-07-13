@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página en construcción</title>
+    <style>
+        body {
+            background-color: navy;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: white;
+            color: navy;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
    <h1> La página se encuentra en el astillero.
-     Proximamente estará lista para navegar por la web entre todos los nautas </h1>
+     Próximamente estará lista para navegar por la web entre todos los nautas </h1>
 
-  
-   
+
+
      <button type="button" onclick="window.location.href = '{% url 'base' %}'" class="boton-crear-producto">Volver al inicio</button>
-
-     
-
-
-
-
-
 </body>
 </html>
+
