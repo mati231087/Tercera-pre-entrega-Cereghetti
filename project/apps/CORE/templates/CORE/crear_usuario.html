@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    
+    <label for="id_nombre_completo">Nombre completo:</label>
+    <input type="text" name="nombre_completo" id="id_nombre_completo" required>
+    <label for="id_mail">Correo electrónico:</label>
+    <input type="email" name="mail" id="id_mail" required>
+    <label for="id_telefono">Teléfono:</label>
+    <input type="text" name="telefono" id="id_telefono" required>
+    <button type="submit">Crear usuario</button>
+  </form>
+  
+  <button type="button" onclick="window.location.href='{% url 'cargar_producto' %}'">Cargar producto</button>

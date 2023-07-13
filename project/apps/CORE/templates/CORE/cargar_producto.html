@@ -1,0 +1,19 @@
+<h1>Cargar producto</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="id_nombre">Nombre de categoría:</label>
+    <select name="nombre" id="id_nombre">
+      {% for opcion in form_categorias.nombre.field.choices %}
+        <option value="{{ opcion.0 }}">{{ opcion.1 }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Crear categoría</button>
+  </form>
+  
+  <form method="POST">
+    {% csrf_token %}
+    <label for="id_usuario">Usuario:</label>
+    <input type="text" name="usuario" id="id_usuario" required>
+    <!-- Agrega aquí los campos adicionales para el formulario de crear producto -->
+    <button type="submit">Crear producto</button>
