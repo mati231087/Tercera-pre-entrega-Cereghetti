@@ -45,6 +45,10 @@
 
     Ahora tienes el proyecto clonado y el entorno virtual de Django configurado. Puedes trabajar en Visual Studio Code y utilizar la terminal integrada para ejecutar comandos relacionados con Git y Django.
 
+    User y pass de django
+    user: noteriasdemipagina
+    pass: Hagoloquepuedo12
+
 
 # objetivo del primer acercamiento 🎯
 
