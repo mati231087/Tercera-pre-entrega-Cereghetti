@@ -15,8 +15,11 @@
     <p> {{ Saludo }} </p>
    {% endblock CONTENIDO %}
 
-<button type="button" onclick="window.location.href='{% url 'crear_usuario' %}'">Crear usuario</button>
-<button type="button" onclick="window.location.href='{% url 'pagina_construccion' %}'">Ver productos</button>
+   <h2>{{ obtener_titulo }}</h2>
+   <p>{{ obtener_slogan }}</p>
+
+   <button type="button" onclick="window.location.href='{% url 'crear_usuario' %}'">Crear usuario</button>
+   <button type="button" onclick="window.location.href='{% url 'pagina_construccion' %}'">Ver productos</button>
 
 
 </body>
